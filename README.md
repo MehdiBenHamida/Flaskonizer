@@ -35,7 +35,6 @@ $ cd flaskonizer
 ```
 
 3. Finally, you need to set up a new remote that points to the original project so that you can grab any changes and bring them into your local copy.
-* For https:
 ```bash
 git remote add upstream https://gitlab.com/YoothIt/flaskonizer.git
 ```
