@@ -1,5 +1,5 @@
 # Flaskonizer 
-* Flask app creator, Flask CLI*
+*Flask app creator, Flask CLI*
 
 ## About the software 
 
