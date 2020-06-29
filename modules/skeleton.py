@@ -35,17 +35,27 @@ class Skeleton:
                 os.mkdir(os.path.join(self.path, self.app_name, "app", "views", "static", "css"))
                 os.mkdir(os.path.join(self.path, self.app_name, "app", "views", "static", "js"))
             if self.api:
-                os.mkdir(os.path.join(self.path, self.app_name, "app", "controllers", "web"))
+                os.mkdir(os.path.join(self.path, self.app_name, "app", "controllers", "api"))
 
         def create_files():
             with open(os.path.join(self.path, self.app_name, self.app_name + ".py"), 'w'): pass
             with open(os.path.join(self.path, self.app_name, "app", "__init__.py"), 'w'): pass
+            with open(os.path.join(self.path, self.app_name, "app", "models", "__init__.py"), 'w'): pass
+            with open(os.path.join(self.path, self.app_name, "app", "controllers", "__init__.py"), 'w'): pass
+            with open(os.path.join(self.path, self.app_name, "app", "utilities", "__init__.py"), 'w'): pass
+            with open(os.path.join(self.path, self.app_name, "app", "utilities", "setup.py"), 'w'): pass
+            with open(os.path.join(self.path, self.app_name, "app", "utilities", "configuration.py"), 'w'): pass
+            with open(os.path.join(self.path, self.app_name, "app", "utilities", "commons.py"), 'w'): pass
             if self.web:
-                pass
+                with open(os.path.join(self.path, self.app_name, "app", "controllers", "web", "__init__.py"), 'w'): pass
+                with open(os.path.join(self.path, self.app_name, "app", "controllers", "web", "index.py"), 'w'): pass
             if self.api:
-                pass
-
-
+                with open(os.path.join(self.path, self.app_name, "app", "controllers", "api", "__init__.py"), 'w'): pass
+                with open(os.path.join(self.path, self.app_name, "app", "controllers", "api", "index.py"), 'w'): pass
+            if self.readme:
+                with open(os.path.join(self.path, self.app_name, "README.md"), 'w'): pass
+            if self.gitignore:
+                with open(os.path.join(self.path, self.app_name, ".gitignore"), 'w'): pass
 
         def fill_files():
             pass
