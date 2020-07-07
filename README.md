@@ -1,4 +1,4 @@
-# Flaskonizer 
+# Flaskonizer (in progress)
 *Flask app creator, Flask CLI*
 
 ## About the software 
